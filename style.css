@@ -1,0 +1,70 @@
+/* Общие стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Убираем горизонтальный скролл */
+    font-family: 'Prosto One', sans-serif; /* Подключите шрифт, если нужно */
+}
+
+/* Шапка */
+.header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Высота шапки */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('images/header/shapka.png') no-repeat center center/cover;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'RoadRadio', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Меню */
+.menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(255, 146, 99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.menu-item {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-item.cart {
+    margin-left: auto;
+}
+
+.menu-item.cart img {
+    width: 30px;
+    height: 30px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
