@@ -1,85 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Doux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Шапка -->
-    <div class="header">
-        <header>
-            <h1>Doux</h1>
-        </header>
-        <!-- Меню -->
-        <nav class="menu">
-            <div class="menu-item">Меню</div>
-            <div class="menu-item">Главная</div>
-            <div class="menu-item">Доставка</div>
-            <div class="menu-item cart">
-                <img src="images/header/cart.png" alt="Корзина">
-            </div>
-        </nav>
-    </div>
 
-    <!-- Второстепенное меню-->
-    <div class="menu_two">
-        <div class="menu-item">горячее</div>
-            <div class="menu_two-item_side_dishes">гарниры</div>
-            <div class="menu_two-item_salads">салаты</div>
-            <div class="menu_two-item_pasta">паста</div>
-            <div class="menu_two-item_drinks">напитки</div>
-            <div class="menu_two-item_desserts">десерты</div>
-    </div>
+<!-- Шапка -->
+<div class="header">
+    <header>
+        <h1>Doux</h1>
+    </header>
+</div>
 
-    <div>
-        <h2>ФРАНЦИЯ ПРЯМО ЗДЕСЬ</h2>
-    </div>
+<!-- Основное меню в оранжевой плашке -->
+<div class="main-menu">
+    <nav class="menu">
+        <div class="menu-item">Меню</div>
+        <div class="menu-item">Главная</div>
+        <div class="menu-item">Доставка</div>
+        <div class="menu-item cart">
+            <img src="images/ikons/cart.png" alt="Корзина">
+        </div>
+    </nav>
+</div>
 
-    <div>
-        <p>Мы предлагаем меню, состоящее из исконно французских рецептов, которые готовятся с использованием только свежих и высококачественных ингредиентов. Каждое блюдо —это результат тщательного выбора ингредиентов и уважения к традиционным кулинарным техникам. Мы готовы порадовать вас классическими рецептами, такими как буябес, фуа-гра и рататуй, а также сезонными деликатесами, которые подчеркнут уникальность каждого времени года.</p>
-        <p>Мы уверены, что традиционная кухня может гармонично сочетаться с современными тенденциями. Наш шеф-повар не боится экспериментировать, представляя уникальные сочетания, которые порадуют даже самых искушенных гурманов, сохраняя при этом дух классической французской кулинарии.</p>
-    </div>
+<!-- Второстепенное меню -->
+<div class="secondary-menu">
+    <div class="menu-item">горячее</div>
+    <div class="menu-item">гарниры</div>
+    <div class="menu-item">салаты</div>
+    <div class="menu-item">паста</div>
+    <div class="menu-item">напитки</div>
+    <div class="menu-item">десерты</div>
+</div>
 
-    <div>
-        <h1>ОТЗЫВЫ</h1>
-    </div>
+<!-- Заголовок "ФРАНЦИЯ ПРЯМО ЗДЕСЬ" -->
+<div class="section-title">
+    <h2>ФРАНЦИЯ ПРЯМО ЗДЕСЬ</h2>
+</div>
 
-    <div>
-<div>
-        <h3>Евгений</h3>
-        <p>Очень милый и комфортный ресторан! Безумно вкусные блюда и вежливый персонал.</p>
-        <img src="images/stars/star.png" alt="">
+<!-- Секция "Франция прямо здесь" -->
+<div class="section-france">
+    <div class="background-container-cocktail">
+        <img src="images/images-background/cocktail.png" alt="Коктейль" class="cocktail-image">
     </div>
-
-    <div>
-        <h3>Александр</h3>
-        <p>Я пришел сюда на завтрак и заказал классический круассан с маслом и чашечку черного кофе. Хорошее начало дня. Но посадили в неудобное место - рядом с уборной. Не очень приятно.</p>
-        <img src="images/stars/star.png" alt="">
+    <div class="background-container-makarons">
+        <img src="images/images-background/makarons.png" alt="Макароны" class="makarons-image">
     </div>
-
-    <div>
-        <h3>Мария</h3>
-        <p>Могу с уверенностью сказать, что круассаны в — это настоящий праздник для гурманов! Плюс, у них восхитительная атмосфера, где можно насладиться утренним кофе!</p>
-        <img src="images/stars/star.png" alt="">
+    <div class="image-container">
+        <img src="images/images-main_content/back.png" alt="Французская кухня" class="france-image">
+    </div>
+    <div class="text-container">
+        <p class="left-text">Мы предлагаем меню, состоящее из исконно французских рецептов, которые готовятся с использованием только свежих и высококачественных ингредиентов. Каждое блюдо — это результат тщательного выбора ингредиентов и уважения к традиционным кулинарным техникам. Мы готовы порадовать вас классическими рецептами, такими как буябес, фуа-гра и рататуй, а также сезонными деликатесами, которые подчеркнут уникальность каждого времени года.</p>
+        <p class="right-text">Мы уверены, что традиционная кухня может гармонично сочетаться с современными тенденциями. Наш шеф-повар не боится экспериментировать, представляя уникальные сочетания, которые порадуют даже самых искушенных гурманов, сохраняя при этом дух классической французской кулинарии.</p>
     </div>
 </div>
 
-    <footer>
-        <div>
-            <p>Следите за нами в социальных сетях:</p>
-            <p>Instagram: https://instagram.com</p>
-            <p>Facebook: https://facebook.com</p>
-            <p>https://twitter.com</p>
-            <p>Мы всегда делимся новыми блюдами, новостями и акциями. Будьте в курсе и делитесь своими впечатлениями с нами!</p>
-        </div>
 
-        <div>
-            <p>Адрес: Санкт-Петербург, ул. Ленина, д. 10</p>
-            <p>Телефон: +7 (812) 123-45-67</p>
-            <p>Время работы: 11:00 - 23:00</p>
+    <!-- Секция "Отзывы" -->
+<div class="section-reviews">
+    <h2>ОТЗЫВЫ</h2>
+    <div class="background-container-reviews">
+        <img src="images/images-background/bread rolls.png" alt="Фон булочки" class="background-image-reviews">
+    </div>
+    <div class="reviews-container">
+        <div class="review">
+            <h3>Евгений</h3>
+            <p>Очень милый и комфортный ресторан! Безумно вкусные блюда и вежливый персонал.</p>
+            <div class="stars">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+            </div>
         </div>
-    </footer>
+        <div class="review">
+            <h3>Александр</h3>
+            <p>Я пришел сюда на завтрак и заказал классический круассан с маслом и чашечку черного кофе. Хорошее начало дня. Но посадили в неудобное место - рядом с уборной. Не очень приятно.</p>
+            <div class="stars">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+            </div>
+        </div>
+        <div class="review">
+            <h3>Мария</h3>
+            <p>Могу с уверенностью сказать, что круассаны в — это настоящий праздник для гурманов! Плюс, у них восхитительная атмосфера, где можно насладиться утренним кофе!</p>
+            <div class="stars">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+                <img src="images/stars/star.png" alt="Звезда">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Футер -->
+<footer>
+    <div class="footer-content">
+        <div class="social-media">
+            <p>Следите за нами в социальных сетях:</p>
+            <p>Instagram: <a href="https://instagram.com">https://instagram.com</a></p>
+            <p>Facebook: <a href="https://facebook.com">https://facebook.com</a></p>
+            <p>Twitter: <a href="https://twitter.com">https://twitter.com</a></p>
+        </div>
+    </div>
+    <div class="contact-info">
+        <p>Адрес: Санкт-Петербург, ул. Ленина, д. 10</p>
+        <p>Телефон: +7 (812) 123-45-67</p>
+        <p>Время работы: 11:00 - 23:00</p>
+    </div>
+</footer>
 </body>
 </html>

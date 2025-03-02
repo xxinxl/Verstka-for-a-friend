@@ -1,70 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Prosto+One&display=swap');
+
+.play-regular {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .play-bold {
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .prosto-one-regular {
+    font-family: "Prosto One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.playwrite {
+    font-family: "Playwrite HR Lijeva", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.play-regular {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.play-bold {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Общие стили */
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Убираем горизонтальный скролл */
-    font-family: 'Prosto One', sans-serif; /* Подключите шрифт, если нужно */
+body {
+    overflow-x: hidden;
+    font-family: 'Playwrite HR Lijeva', serif; /* Основной шрифт для текста */
+    font-weight: 400; /* Вес шрифта */
+    font-style: normal;
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+h1, h2, h3 {
+    font-family: 'Play', sans-serif; /* Шрифт для заголовков */
+    color: #444;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-family: 'Play', sans-serif; /* Шрифт для ссылок */
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Шапка */
 .header {
+    background-image: url('images/head/head_shapka.png'); /* Путь к картинке */
+    font-family: 'Play', sans-serif;
+    background-size: cover; /* Растягиваем картинку на всю шапку */
+    background-position: center; /* Центрируем картинку */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    color: #fff;
+    padding: 118px 0; /* Отступы внутри шапки */
+    text-align: center;
     position: relative;
+    z-index: 3; /* Шапка сверху всех */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff; /* Белый цвет текста */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
+}
+
+/* Основное меню в оранжевой плашке */
+.main-menu {
+    background-color: rgb(255, 146, 99); /* Оранжевый цвет */
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Оранжевая плашка под шапкой */
+}
+
+.main-menu .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Отступ между пунктами меню */
+}
+
+.main-menu .menu-item {
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень для текста */
+}
+
+.main-menu .menu-item.cart img {
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5)); /* Тень для иконки корзины */
+}
+
+/* Второстепенное меню */
+.secondary-menu {
+    background-color: #f8f8f8; /* Светлый фон для второстепенного меню */
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Отступ между пунктами меню */
+    position: relative;
+    z-index: 1; /* Второстепенное меню под оранжевой плашкой */
+}
+
+.secondary-menu .menu-item {
+    color: #333; /* Темный цвет текста */
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.secondary-menu .menu-item:hover {
+    color: #007BFF; /* Цвет при наведении */
+}
+
+/* Шапка */
+.header {
+    background-image: url('images/head/head_shapka.png'); /* Путь к картинке */
+    font-family: 'Play', sans-serif;
+    background-size: cover; /* Растягиваем картинку на всю шапку */
+    background-position: center; /* Центрируем картинку */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    color: #fff;
+    padding: 118px 0; /* Отступы внутри шапки */
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Шапка под меню */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff; /* Белый цвет текста */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
+}
+
+/* Секция "Франция прямо здесь" */
+.section-france {
+    padding: 40px 200px;
+    background-color: #fff;
+    text-align: left;
+    max-width: 1100px; /* Такая же ширина, как у картинки */
+    margin: 0 auto; /* Центрирование */
+    position: relative; /* Для позиционирования фоновой картинки */
+    overflow: visible; /* Разрешаем элементам выходить за границы */
+    min-height: 898.07px; /* Минимальная высота секции, чтобы картинка не обрезалась */
+}
+
+.section-france h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+    padding-left: 20px; /* Отступ слева, как у "ФРАНЦИЯ ПРЯМО ЗДЕСЬ" */
+}
+
+.background-container-cocktail {
+    position: absolute;
+    top: 70%; /* Сдвигаем картинку ниже */
+    left: -400px; /* Сдвигаем картинку влево, чтобы она выходила за край сайта */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    z-index: 1; /* Фоновая картинка позади */
+    width: 500px; /* Уменьшаем ширину картинки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.cocktail-image {
     width: 100%;
-    height: 300px; /* Высота шапки */
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover; /* Сохраняем пропорции */
+}
+
+.background-container-makarons {
+    position: absolute;
+    top: 0; /* Позиционируем сверху */
+    right: -200px; /* Сдвигаем картинку вправо, чтобы она выходила за край сайта */
+    z-index: 1; /* Фоновая картинка позади */
+    width: 541px; /* Ширина картинки */
+    height: 676px; /* Высота картинки */
+}
+
+.makarons-image {
+    width: 108%;
+    height: 107%;
+    object-fit: cover; /* Сохраняем пропорции */
+}
+
+.image-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 300px; /* Увеличиваем отступ сверху */
+}
+
+.france-image {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.text-container {
+    font-family: 'Play', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 3; /* Текст поверх фоновой картинки */
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-container .left-text,
+.text-container .right-text {
+    width: 48%;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.text-container .left-text {
+    text-align: left;
+}
+
+.text-container .right-text {
+    text-align: right;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .text-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .text-container .left-text,
+    .text-container .right-text {
+        width: 100%;
+    }
+
+    .background-container-cocktail,
+    .background-container-makarons {
+        display: none; /* Скрываем фоновые картинки на мобильных */
+    }
+
+    .image-container {
+        margin-top: 50px; /* Уменьшаем отступ на мобильных устройствах */
+    }
+
+    .section-france {
+        min-height: auto; /* Убираем фиксированную высоту на мобильных */
+    }
+}
+
+/* Секция "Отзывы" */
+.section-reviews {
+    font-family: 'Play', sans-serif;
+    padding: 40px 34px;
+    background-color: #fff; /* Белый фон */
+    text-align: left;
+    max-width: 1100px; /* Такая же ширина, как у картинки */
+    margin: 0 auto; /* Центрирование */
+    position: relative; /* Для позиционирования фоновой картинки */
+    overflow: visible; /* Разрешаем элементам выходить за границы */
+    min-height: 676px; /* Минимальная высота секции, чтобы картинка не обрезалась */
+}
+
+.section-reviews h2 {
+    font-family: "Prosto One", serif;;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+    padding-left: 20px; /* Отступ слева, как у "ФРАНЦИЯ ПРЯМО ЗДЕСЬ" */
+}
+
+.background-container-reviews {
+    position: absolute;
+    top: 50%; /* Центрируем по вертикали */
+    right: -400px; /* Сдвигаем картинку вправо, но меньше, чтобы большая часть была видна */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    z-index: 1; /* Фоновая картинка позади */
+    width: 541px; /* Ширина картинки, как у макарон */
+    height: 676px; /* Высота картинки, как у макарон */
+}
+
+.background-image-reviews {
+    margin-right: 0px;
+    width: 88.5%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.reviews-container {
+    display: flex; /* Горизонтальное расположение отзывов */
+    justify-content: space-between; /* Равномерное распределение */
+    gap: 20px; /* Отступ между отзывами */
+    padding: 0 20px; /* Отступы слева и справа */
+    position: relative;
+    z-index: 2; /* Отзывы поверх фоновой картинки */
+}
+
+.review {
+    font-family: "Prosto One", serif;
+    background-color: #B7C7DB; /* Фоновый цвет */
+    padding: 30px;
+    border-radius: 70px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Фиксированная ширина */
+    height: 400px; /* Фиксированная высота */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url('images/header/shapka.png') no-repeat center center/cover;
+    justify-content: space-between; /* Равномерное распределение контента */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-header h1 {
-    color: rgb(255, 255, 255);
-    font-family: 'RoadRadio', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    z-index: 2;
-    text-align: center;
+.review:hover {
+    transform: translateY(-5px); /* Эффект поднятия при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Меню */
-.menu {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background: rgb(255, 146, 99);
+.review h3 {
+    font-family: "Prosto One", serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.review p {
+    font-family: "Play", serif;;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: rgb(29, 45, 97);
+}
+
+.stars {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 40px;
-    padding: 0 20px;
-    box-sizing: border-box;
+    gap: 5px;
 }
 
-.menu-item {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    cursor: pointer;
-    text-align: center;
-}
-
-.menu-item.cart {
-    margin-left: auto;
-}
-
-.menu-item.cart img {
+.stars img {
     width: 30px;
     height: 30px;
 }
 
-.content {
-    padding: 20px;
-    text-align: center;
+/* Адаптивность */
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column; /* Вертикальное расположение на мобильных */
+        align-items: center;
+    }
+
+    .review {
+        width: 90%; /* Ширина отзывов на мобильных */
+        height: auto; /* Высота автоматическая */
+        margin-bottom: 20px; /* Отступ между отзывами */
+    }
+
+    .background-container-reviews {
+        display: none; /* Скрываем фоновую картинку на мобильных */
+    }
+}
+
+/* Футер */
+footer {
+    font-family: 'Play', sans-serif;
+    background-color: #1D2D61;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+footer .social-media {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+footer .contact-info {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+footer .social-media p, footer .contact-info p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+footer .social-media a {
+    color: #007BFF;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность для футера */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .social-media, footer .contact-info {
+        max-width: 100%;
+    }
 }
