@@ -1,39 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Prosto+One&display=swap');
-
-.play-regular {
-    font-family: "Play", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .play-bold {
-    font-family: "Play", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  .prosto-one-regular {
-    font-family: "Prosto One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.playwrite {
-    font-family: "Playwrite HR Lijeva", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+@font-face {
+    font-family: 'Play'; /* Название шрифта */
+    src: url('../fonts/Play-Regular.ttf') format('truetype'); /* Путь к файлу */
+    font-weight: 400; /* Обычное начертание */
     font-style: normal;
 }
 
-.play-regular {
-    font-family: "Play", sans-serif;
-    font-weight: 400;
+@font-face {
+    font-family: 'Prosto One'; /* Название шрифта */
+    src: url('../fonts/ProstoOne-Regular.ttf') format('truetype'); /* Путь к файлу */
+    font-weight: 400; /* Обычное начертание */
     font-style: normal;
 }
 
-.play-bold {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
+@font-face {
+    font-family: 'RoadRadio'; /* Название шрифта */
+    src: url('../fonts/roadradio_bold.otf') format('opentype'); /* Путь к файлу */
+    font-weight: 700; /* Жирное начертание */
     font-style: normal;
 }
 
@@ -76,8 +58,9 @@ a:hover {
 }
 
 .header h1 {
+    font-family: "RoadRadio", sans-serif;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 5.5em;
     color: #fff; /* Белый цвет текста */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
 }
@@ -85,52 +68,55 @@ a:hover {
 /* Основное меню в оранжевой плашке */
 .main-menu {
     background-color: rgb(255, 146, 99); /* Оранжевый цвет */
-    padding: 10px 0;
+    padding: 17px 0;
     text-align: center;
     position: relative;
-    z-index: 2; /* Оранжевая плашка под шапкой */
+    z-index: 2;
 }
 
 .main-menu .menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Отступ между пунктами меню */
+    gap: 300px; /* Отступ между пунктами меню */
 }
 
 .main-menu .menu-item {
+    font-family: "Prosto One", serif;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.2em;
     cursor: pointer;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Тень для текста */
 }
 
 .main-menu .menu-item.cart img {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
     filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5)); /* Тень для иконки корзины */
 }
 
 /* Второстепенное меню */
 .secondary-menu {
-    background-color: #f8f8f8; /* Светлый фон для второстепенного меню */
+    background-color: #ffffff; /* Светлый фон для второстепенного меню */
     padding: 10px 0;
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Отступ между пунктами меню */
+    gap: 136px; /* Отступ между пунктами меню */
     position: relative;
-    z-index: 1; /* Второстепенное меню под оранжевой плашкой */
+    z-index: 1;
 }
 
 .secondary-menu .menu-item {
+    font-family: "Prosto One", serif;
     color: #333; /* Темный цвет текста */
-    font-size: 1em;
+    font-size: 1.2em;
     cursor: pointer;
+    text-transform: uppercase; /* Все буквы заглавные */
 }
 
 .secondary-menu .menu-item:hover {
-    color: #007BFF; /* Цвет при наведении */
+    color: #1D2D61; /* Цвет при наведении */
 }
 
 /* Шапка */
@@ -144,12 +130,13 @@ a:hover {
     padding: 118px 0; /* Отступы внутри шапки */
     text-align: center;
     position: relative;
-    z-index: 1; /* Шапка под меню */
+    z-index: 3; /* Шапка сверху всех */
 }
 
 .header h1 {
+    font-family: "RoadRadio", sans-serif;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 5.5em;
     color: #fff; /* Белый цвет текста */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
 }
@@ -167,10 +154,12 @@ a:hover {
 }
 
 .section-france h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #444;
-    padding-left: 20px; /* Отступ слева, как у "ФРАНЦИЯ ПРЯМО ЗДЕСЬ" */
+    font-family: 'RoadRadio';
+    font-size: 3em;
+    margin-bottom: -251px;
+    color: #1D2D61;
+    margin-top: 102px;
+    padding-left: 16px; /* Отступ слева, как у "ФРАНЦИЯ ПРЯМО ЗДЕСЬ" */
 }
 
 .background-container-cocktail {
@@ -184,7 +173,7 @@ a:hover {
 }
 
 .cocktail-image {
-    width: 100%;
+    width: 130%;
     height: 100%;
     object-fit: cover; /* Сохраняем пропорции */
 }
@@ -239,7 +228,7 @@ a:hover {
     width: 48%;
     font-size: 1.1em;
     line-height: 1.6;
-    color: #333;
+    color: #1D2D61;
 }
 
 .text-container .left-text {
